@@ -1,0 +1,148 @@
+@font-face {
+	font-family: GothamMedium;
+	src: url('../fonts/GothamBookRegular.otf');
+}
+@font-face {
+	font-family: GothamBook;
+	src: url('../fonts/GothamMedium.otf');
+}
+ul, li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: 'GothamMedium, Helvetica';
+	font-size: 14px;
+	margin: 0;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+header .logo{
+	width: 120px;
+	margin-left: 20px;
+}
+header .middle ul{
+	display: flex;
+}
+header .middle ul li{
+	margin:0 10px;
+}
+header .middle ul li a{
+	color: #000;
+	text-transform: uppercase;
+}
+header .rightside ul {
+	display: flex;
+}
+header .rightside ul li{
+	margin:0 10px;
+}
+header .rightside ul li a{
+	text-transform: uppercase;
+	color: #000000;
+}
+header .menu_icon{
+	width: 18px;
+	height: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+header .menu_icon div{
+	height: 2px;
+	background-color: #000000;
+}
+main{
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+main .info{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 45vh;
+	justify-content: center;
+}
+main h1{
+	margin: 0;
+	font-size: 40px;
+	font-weight: normal;
+	color: #000000;
+}
+main h2{
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 'GothamBook';
+	color: #000;
+}
+main h2 a {
+	text-decoration: underline;
+}
+footer{
+	position: fixed;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+}
+footer .buttons-area{
+	display: flex;
+	justify-content: center;
+}
+footer .buttons-area a{
+	display: block;
+	width: 220px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 15px;
+	border-radius: 30px;
+	margin: 0 10px;
+}
+footer .btn-dark{
+	background-color: #fff;
+	color: #000;
+}
+footer .btn-light{
+	background-color: #fff;
+	color: #000;
+}
+@media(max-width:1200px){
+	header .middle{
+		display: none;
+	}
+	header .middle{
+		display: none;
+	}
+	header .rightside li{
+		display: none;
+	}
+	header .rightside li.menu{
+		display: inline-block;
+		cursor: pointer;
+	}
+}
+@media(max-width:600px){
+	footer .buttons-area{
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .buttons-area a{
+		margin: 10px 20px;
+		width: calc(100vw - 60px);
+	}
+}
